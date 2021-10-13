@@ -1,3 +1,3 @@
-export * from 'colors.js'
-export * from 'theme.js'
-export * from 'typography.js'
+export * from "./typography";
+export * from "./colors";
+export * from "./theme";

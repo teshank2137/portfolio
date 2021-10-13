@@ -1,18 +1,22 @@
 .navbar {
     position: fixed;
-    width: 14%;
+    width: 10rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: #ffffff12;
+    justify-content: flex-start;
+    background-color: #ffffff0c;
+    transform: all 1s;
+    z-index: 1000;
 }
 .icon-close {
     display: none;
 }
 .logo {
     width: 100%;
-    height: 100px;
+    object-fit: cover;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
 .nav-buttons {
@@ -20,11 +24,13 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
 .nav-tile {
     display: flex;
-    padding: 0.25rem 0;
+    padding: 0.5rem 0;
 }
 
 .socials {
@@ -33,9 +39,10 @@
     justify-content: space-around;
     align-items: center;
     padding-bottom: 0.8rem;
+    margin-top: auto;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1044px) {
     .icon-close {
         position: absolute;
         right: 0;
@@ -44,12 +51,14 @@
         color: white;
     }
     .navbar {
-        position: relative;
+        position: absolute;
+        top: 0;
         width: 100%;
         height: auto;
         flex-direction: column;
         justify-content: flex-start;
         display: none;
+        background-color: #131313ee;
     }
 
     .logo {

@@ -7,6 +7,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import CloseIcon from "@mui/icons-material/Close";
 
+import Logo from "../components/logo";
 import { NavButton } from "../components/nav-button";
 
 export const NavBar = () => {
@@ -21,7 +22,9 @@ export const NavBar = () => {
             <button className="icon-close" onClick={toggleVisibility}>
                 <CloseIcon />
             </button>
-            <div className="logo"></div>
+            <button className="logo">
+                <Logo />
+            </button>
             <div className="nav-buttons">
                 <ul>
                     <li className="nav-tile">

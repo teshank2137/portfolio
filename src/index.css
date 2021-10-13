@@ -5,7 +5,7 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #282c34;
+    background-color: #131313;
     color: white;
 }
 
@@ -27,6 +27,20 @@ button {
     outline: inherit;
 }
 
+.main {
+    width: calc(100% - 10rem);
+    height: 100vh;
+    margin-left: 10rem;
+}
+
+.threed-container {
+    position: absolute;
+    width: calc(100% - 10rem);
+    margin-left: 10rem;
+    top: 0;
+    height: 100vh;
+}
+
 ul,
 li {
     list-style-type: none;
@@ -43,9 +57,18 @@ a {
     display: none;
 }
 .menu-icon {
-    color: #ffffffb8;
+    color: #ffffff55;
 }
-@media only screen and (max-width: 720px) {
+
+@media only screen and (max-width: 1044px) {
+    .main {
+        width: 100vw;
+        margin-left: 0;
+    }
+    .threed-container {
+        width: 100vw;
+        margin-left: 0;
+    }
     .mobile {
         display: block;
     }
@@ -55,6 +78,7 @@ a {
         padding: 0.8rem;
         position: absolute;
         right: 0;
+        z-index: 1000;
     }
     .menu-icon:hover {
         color: white;
