@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-scroll";
 import { type } from "../utils";
 import useIsMobile from "../customHooks/useIsMobile";
 
