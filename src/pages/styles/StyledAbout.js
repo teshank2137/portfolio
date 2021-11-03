@@ -1,14 +1,10 @@
 import styled from "styled-components";
 import { type, screenSize } from "../../utils";
-import cursor from "../../assets/images/customCursor.png";
 
 export const StyledAbout = styled.div`
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  /* canvas {
-        cursor: url(${cursor}), move;
-    } */
   height: 100vh;
 
   .about-text {
