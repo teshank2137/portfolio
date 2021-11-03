@@ -1,6 +1,6 @@
 export const type = {
-    webTitle: "4.5rem",
-    bodyText: "1.875rem",
+    webTitle: "4.35rem",
+    bodyText: "1.625rem",
     secondaryHeader: "1.3rem",
     cardTitle: "2rem",
     cardBody: "1.25rem",
@@ -8,14 +8,14 @@ export const type = {
     techStack: "1.625rem",
     webTitleMobile: "2rem",
     bodyTextMobile: "1rem",
-    secondaryHeaderMobile: "0.75rem",
+    secondaryHeaderMobile: "1rem",
     cardTitleMobile: "1.313rem",
-    cardBodyMobile: "1.25rem",
-    timeTextMobile: "0.75rem",
+    cardBodyMobile: "1rem",
+    timeTextMobile: "0.65rem",
     techStackMobile: "0.75rem",
 };
 
 export const screenSize = {
-    tablet: "1044px",
+    tablet: "1124px",
     mobile: "786px",
 };
