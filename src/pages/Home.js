@@ -5,6 +5,7 @@ import "./styles/home.css";
 import useIsMobile from "../customHooks/useIsMobile";
 import SingleRoom from "../3d/SingleRoom";
 import font from "../assets/fonts/Poppins-Bold.ttf";
+import ScrollIcon from "../components/ScrollIcon";
 
 const Home = () => {
   const ismobile = useIsMobile();
@@ -62,6 +63,7 @@ const Home = () => {
           </Text>
         </group>
       </Canvas>
+      <ScrollIcon />
     </div>
   );
 };

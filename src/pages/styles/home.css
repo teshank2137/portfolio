@@ -1,15 +1,16 @@
 @keyframes example {
-    from {
-        transform: translateY(120px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+  from {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .home {
-    animation-name: example;
-    animation-duration: 1.5s;
+  animation-name: example;
+  animation-duration: 1.5s;
+  position: relative;
 }
