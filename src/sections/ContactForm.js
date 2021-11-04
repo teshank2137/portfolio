@@ -20,7 +20,12 @@ const ContactForm = () => {
         action="https://formsubmit.io/send/8526af8c-75e9-44ac-b462-fc33ebd697fd"
         method="POST"
       >
-        <input name="_redirect" type="hidden" id="name" value={null} />
+        <input
+          name="_redirect"
+          type="hidden"
+          id="name"
+          value="https://teshankraut.vercel.app/"
+        />
         <div className="form-group">
           <input
             type="text"
