@@ -94,7 +94,11 @@ const StyledScrollIcon = styled.button`
 
 const ScrollIcon = () => {
   return (
-    <StyledScrollIcon>
+    <StyledScrollIcon
+      onClick={() =>
+        document.getElementById("About").scrollIntoView({ behavior: "smooth" })
+      }
+    >
       <div className="container-icon">
         <div className="chevron"></div>
         <div className="chevron"></div>
