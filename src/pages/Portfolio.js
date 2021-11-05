@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
+import useProjects from "../customHooks/useProjects";
 import StyledPortfolio from "./styles/StyledPortfolio";
 
 const Portfolio = () => {
@@ -9,56 +10,7 @@ const Portfolio = () => {
     }
     return spans;
   };
-  const projects = [
-    {
-      title: "Find Techie",
-      description:
-        "Incididunt qui cupidatat eiusmod sint ex proident quis velit ipsum. Culpa culpa magna Lorem mollit. Ipsum ad eu laborum cupidatat consequat eu cupidatat excepteur. Cupidatat enim sunt incididunt ipsum velit. Do ut dolor ipsum aliquip. Est et pariatur anim et aliqua.",
-      image: "https://source.unsplash.com/random",
-      link: "https://www.google.com",
-      github: "https://www.github.com",
-    },
-    {
-      title: "Smart Attendance App",
-      description:
-        "Incididunt qui cupidatat eiusmod sint ex proident quis velit ipsum. Culpa culpa magna Lorem mollit. Ipsum ad eu laborum cupidatat consequat eu cupidatat excepteur. Cupidatat enim sunt incididunt ipsum velit. Do ut dolor ipsum aliquip. Est et pariatur anim et aliqua.",
-      image: "https://source.unsplash.com/random",
-      // link: "https://www.google.com",
-      github: "https://www.github.com",
-    },
-    {
-      title: "Stock Market Prediction API",
-      description:
-        "Incididunt qui cupidatat eiusmod sint ex proident quis velit ipsum. Culpa culpa magna Lorem mollit. Ipsum ad eu laborum cupidatat consequat eu cupidatat excepteur. Cupidatat enim sunt incididunt ipsum velit. Do ut dolor ipsum aliquip. Est et pariatur anim et aliqua.",
-      image: "https://source.unsplash.com/random",
-      link: "https://www.google.com",
-      // github: "https://www.github.com",
-    },
-    {
-      title: "Algorithm Visualizer",
-      description:
-        "Incididunt qui cupidatat eiusmod sint ex proident quis velit ipsum. Culpa culpa magna Lorem mollit. Ipsum ad eu laborum cupidatat consequat eu cupidatat excepteur. Cupidatat enim sunt incididunt ipsum velit. Do ut dolor ipsum aliquip. Est et pariatur anim et aliqua.",
-      image: "https://source.unsplash.com/random",
-      link: "https://www.google.com",
-      github: "https://www.github.com",
-    },
-    {
-      title: "My Portfolio",
-      description:
-        "Incididunt qui cupidatat eiusmod sint ex proident quis velit ipsum. Culpa culpa magna Lorem mollit. Ipsum ad eu laborum cupidatat consequat eu cupidatat excepteur. Cupidatat enim sunt incididunt ipsum velit. Do ut dolor ipsum aliquip. Est et pariatur anim et aliqua.",
-      image: "https://source.unsplash.com/random",
-      link: "https://www.google.com",
-      github: "https://www.github.com",
-    },
-    {
-      title: "Project Automation",
-      description:
-        "Incididunt qui cupidatat eiusmod sint ex proident quis velit ipsum. Culpa culpa magna Lorem mollit. Ipsum ad eu laborum cupidatat consequat eu cupidatat excepteur. Cupidatat enim sunt incididunt ipsum velit. Do ut dolor ipsum aliquip. Est et pariatur anim et aliqua.",
-      image: "https://source.unsplash.com/random",
-      link: "https://www.google.com",
-      github: "https://www.github.com",
-    },
-  ];
+  const projects = useProjects();
   return (
     <StyledPortfolio>
       <h1 className="title">
