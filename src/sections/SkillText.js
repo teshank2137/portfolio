@@ -17,12 +17,13 @@ const SkillText = () => {
         {getSpans("Experience").map((e) => e)}
       </h1>
       <div className="skill-contents">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was .
+        I'm a passionate programmer, who is always looking for new challenges to
+        improve myself, also a team player, who is always ready to learn new
+        things and help others.
+        <br />
+        <br />I love to work with JavaScript, React, Python, Django, Flutter and
+        many other. I also have experience with C++, Java, NodeJS, Express and
+        many other.
       </div>
     </section>
   );

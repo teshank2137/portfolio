@@ -22,6 +22,7 @@ const StyledSkill = styled.div`
     padding-top: 0.5rem;
   }
   .cards {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +48,7 @@ const StyledSkill = styled.div`
     .cards {
       padding: 0;
       padding-bottom: 0.5rem;
+      width: 100%;
     }
     .skill-container {
       flex-direction: column;

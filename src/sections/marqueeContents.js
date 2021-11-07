@@ -18,7 +18,7 @@ import react from "../assets/icons/react.gif";
 import py from "../assets/icons/py.gif";
 import three from "../assets/icons/Threejs-logo.svg";
 import node from "../assets/icons/FavoritesSvg/nodejs.svg";
-import ex from "../assets/icons/FavoritesSvg/ex.png";
+import ex from "../assets/icons/express.svg";
 
 import SingleLogo from "../components/singleLogo";
 

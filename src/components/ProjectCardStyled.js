@@ -84,7 +84,7 @@ const StyledProjectCard = styled.div`
     .project-card-content {
       transition: all 0.2s ease-in-out;
       background: linear-gradient(
-        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.8) 0%,
         rgba(0, 0, 0, 0.9) 100%
       );
     }
