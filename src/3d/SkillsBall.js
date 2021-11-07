@@ -47,7 +47,7 @@ const Skills = () => {
   });
   return (
     <>
-      <OrbitControls enablePan={false} enableZoom={true} />
+      <OrbitControls enablePan={false} enableZoom={false} />
       <pointLight position={[-2, 2, 2]} args={["#fff", 0.3]} />
       <group ref={g} position={[0, 0, 0]} scale={0.1}>
         {skills.map((a, i) => {
