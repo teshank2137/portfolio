@@ -1,8 +1,8 @@
 import { useFrame, extend } from "@react-three/fiber";
-import TextSprite from "@seregpie/three.text-sprite";
+import SpriteText from "three-spritetext";
 import { OrbitControls } from "@react-three/drei";
 import { useRef } from "react";
-extend({ TextSprite });
+extend({ SpriteText });
 
 const Skills = () => {
   const getPos = (k) => {
@@ -47,16 +47,17 @@ const Skills = () => {
   });
   return (
     <>
-      <OrbitControls enablePan={false} enableZoom={false} />
+      <OrbitControls enablePan={false} enableZoom={true} />
       <pointLight position={[-2, 2, 2]} args={["#fff", 0.3]} />
-      <group ref={g} position={[0.35, 0, 0]} scale={0.8}>
+      <group ref={g} position={[0, 0, 0]} scale={0.1}>
         {skills.map((a, i) => {
           return (
-            <textSprite
+            <spriteText
               text={a}
               key={i}
-              fontSize={0.33}
-              position={[getPos(3), getPos(3), getPos(3)]}
+              fontSize={90}
+              position={[getPos(80), getPos(80), getPos(80)]}
+              fontFace={"'Dank Mono','Fira Code','Roboto Mono', monospace"}
               color={i % 2 === 0 ? "#FAFF81" : "#E06D06"}
             />
           );
