@@ -24,6 +24,8 @@ export const StyledAbout = styled.div`
   .about-contents {
     padding: 2.25rem;
     font-size: ${type.bodyText};
+    letter-spacing: 0.055rem;
+    line-height: 1.3;
   }
   .skills-3d {
     height: 100%;
@@ -60,6 +62,8 @@ export const StyledAbout = styled.div`
     .about-contents {
       font-size: ${type.bodyTextMobile};
       padding: 1.1rem;
+      letter-spacing: 0.04rem;
+      line-height: 1.1;
     }
   }
 `;

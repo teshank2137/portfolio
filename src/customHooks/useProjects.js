@@ -21,7 +21,7 @@ const useProjects = () => {
       {
         title: "Smart Attendance App",
         description:
-          "A mobile app in which the user can track and mark attendance using face verification. Read more on Github",
+          "A mobile app in which the user can track and mark attendance using face verification. Connected backend and fronted by building RestAPI in Django. Read more details on github",
         image: smartAttendance,
         github: "https://github.com/teshank2137/smartAtendence",
       },

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { type, screenSize } from "../utils";
 
 const StyledCard = styled.div`
-  width: 70%;
+  /* width: 70%; */
   background-color: #ffffff0a;
   border-radius: 0.75rem;
   background: linear-gradient(145deg, #111111, #141414);
