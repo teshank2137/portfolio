@@ -9,14 +9,13 @@
         "@mui/material": "^5.0.3",
         "@react-three/drei": "^7.14.2",
         "@react-three/fiber": "^7.0.15",
-        "@seregpie/three.text-sprite": "^3.2.0",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-fast-marquee": "^1.2.1",
         "react-scripts": "4.0.3",
-        "react-scroll": "^1.8.4",
         "styled-components": "^5.3.1",
-        "three": "^0.133.1"
+        "three": "^0.133.1",
+        "three-spritetext": "^1.6.3"
     },
     "scripts": {
         "start": "react-scripts start",
