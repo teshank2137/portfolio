@@ -9,8 +9,8 @@ const JobCard = ({ position, compName, timestamp, description }) => {
           <h3 className="card-compName">{compName}</h3>
           <div className="card-timestamp">{timestamp}</div>
           <p className="card-description">
-            {description.map((e) => (
-              <span>
+            {description.map((e, i) => (
+              <span key={i}>
                 {e} <br />
               </span>
             ))}

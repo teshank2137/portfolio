@@ -45,7 +45,7 @@ const useProjects = () => {
         description:
           "An interactive 3D-portfolio website built using Reactjs and Threejs showcasing my work with proper use of UI/ UX concepts",
         image: portfolio,
-        link: "https://teshankraut.vercel.com",
+        link: "https://teshankraut.me",
         github: "https://github.com/teshank2137/portfolio",
       },
       {
@@ -53,7 +53,6 @@ const useProjects = () => {
         description:
           "A command line tool for windows which automates project initialization process for you. Read more on Github",
         image: automation,
-        // link: "https://teshankraut.vercel.com",
         github: "https://github.com/teshank2137/Project_automation",
       },
     ];
