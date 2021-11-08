@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { screenSize, type } from "../utils";
 
-const WIDTH = "25rem";
-const HEIGHT = "15rem";
+const HEIGHT = "16rem";
 const StyledProjectCard = styled.div`
-  width: ${WIDTH};
+  width: 30%;
   height: ${HEIGHT};
   margin-bottom: 1.25rem;
 
@@ -26,14 +25,14 @@ const StyledProjectCard = styled.div`
       rgba(0, 0, 0, 0.6) 70%,
       rgba(0, 0, 0, 0.9) 100%
     );
-    width: ${WIDTH};
+    width: 100%;
     height: ${HEIGHT};
     position: absolute;
     top: 0px;
   }
   img {
     object-fit: cover;
-    width: ${WIDTH};
+    width: 100%;
     height: ${HEIGHT};
   }
   .project-card-content-1 {
