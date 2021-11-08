@@ -31,9 +31,16 @@ function App() {
         <div className="container" id="Contact">
           <ContactPage />
         </div>
-        <footer className="footer">
-          Copyright &copy; {new Date().getFullYear()}
+        <footer className="footer container">
           <div>
+            Copyright &copy; {new Date().getFullYear()}
+            <br />
+            Shout out to{" "}
+            <a href="https://sketchfab.com/Brynnnnn" className="highlight">
+              Brynnnnn
+            </a>{" "}
+            for amazing 3D model.
+            <br />
             icons by <a href="https://icons8.com/">Icons8</a>
           </div>
         </footer>
