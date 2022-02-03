@@ -21,6 +21,12 @@ const StyledPortfolio = styled.div`
     .projects {
       padding: 1.1rem;
     }
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.25rem;
+      place-items: center;
+    }
     .title {
       padding-top: 2rem;
       font-size: ${type.webTitleMobile};

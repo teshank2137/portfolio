@@ -18,7 +18,13 @@ const ProjectCard = ({
             <h3 className="card-title">{title}</h3>
           </div>
           <div className="project-card-content-2">
-            <p>{description.slice(0, 1200)}</p>
+            <p>
+              {description.map((point, index) => (
+                <li className="point" key={index}>
+                  {point}
+                </li>
+              ))}
+            </p>
             <div className="project-card-links">
               {link && (
                 <a href={link} target="_blank" rel="noopener noreferrer">

@@ -8,6 +8,7 @@ const StyledProjectCard = styled.div`
   margin-bottom: 1.25rem;
 
   border-radius: 6px;
+  overflow: hidden;
   background: linear-gradient(145deg, #111111, #141414);
   box-shadow: 8px 8px 15px #0d0d0d, -8px -8px 15px #191919;
   -webkit-box-shadow: 8px 8px 15px #0d0d0d, -8px -8px 15px #191919;
@@ -40,6 +41,7 @@ const StyledProjectCard = styled.div`
     bottom: 0px;
     right: 0px;
     padding: 1rem;
+    transition: all 0.2s ease-in-out;
     h3 {
       font-size: 1.8rem;
     }
@@ -52,6 +54,13 @@ const StyledProjectCard = styled.div`
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    transition: all 0.25s ease-in-out;
+    p > li {
+      margin-bottom: 0.5rem;
+      &::before {
+        content: "⭐";
+      }
+    }
   }
   .project-card-links {
     display: flex;
@@ -77,9 +86,10 @@ const StyledProjectCard = styled.div`
   }
 
   //
+
+  transition: all 0.2s ease-in-out;
   &:hover {
     transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
     .project-card-content {
       transition: all 0.2s ease-in-out;
       background: linear-gradient(
@@ -89,12 +99,10 @@ const StyledProjectCard = styled.div`
     }
     .project-card-content-1 {
       opacity: 0;
-      transition: all 0.2s ease-in-out;
     }
     .project-card-content-2 {
       opacity: 1;
       transform: translateY(0);
-      transition: all 0.25s ease-in-out;
     }
   }
 
@@ -116,6 +124,7 @@ const StyledProjectCard = styled.div`
     width: 10rem;
     height: 10rem;
     margin-bottom: 0.5rem;
+    grid-column: span 1;
     img {
       width: 10rem;
       height: 10rem;
@@ -131,6 +140,12 @@ const StyledProjectCard = styled.div`
     .project-card-content-1 {
       h3 {
         font-size: ${type.cardTitleMobile};
+      }
+    }
+    .project-card-content-2 {
+      p {
+        display: hidden;
+        opacity: 0;
       }
     }
     &:hover {

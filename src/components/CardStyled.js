@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { type, screenSize } from "../utils";
 
 const StyledCard = styled.div`
-  /* width: 70%; */
+  width: 25rem !important;
   background-color: #ffffff0a;
   border-radius: 0.75rem;
   background: linear-gradient(145deg, #111111, #141414);
@@ -36,7 +36,7 @@ const StyledCard = styled.div`
   }
   @media only screen and (max-width: ${screenSize.mobile}) {
     box-shadow: 15px 15px 53px #080808, -15px -15px 53px #1e1e1e;
-    width: 90%;
+    width: 18.5rem !important;
     .card {
       padding-top: 0;
     }
