@@ -16,8 +16,8 @@ const SkillPage = () => (
             compName="Geniobits"
             timestamp="Dec 2021-Mar 2022"
             description={[
-              "Built and Designed Rest API using Django",
-              "Researched and implemented UI/UX for a website in React",
+              "Designed Rest API using Django",
+              "Researched and implemented UI/UX in React",
               "Integrated PayTM payment gateway for web applications",
             ]}
           />
