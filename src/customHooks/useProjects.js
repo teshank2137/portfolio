@@ -68,7 +68,7 @@ const useProjects = () => {
           "Built using ReactJS, ThreeJS, CSS3 and lots of ❤️ love.",
         ],
         image: portfolio,
-        link: "https://teshankraut.me",
+        link: "https://www.teshank.dev/",
         github: "https://github.com/teshank2137/portfolio",
       },
     ];
