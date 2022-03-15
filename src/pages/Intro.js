@@ -14,17 +14,18 @@ const SkillPage = () => (
           <JobCard
             position="Software Development Intern"
             compName="Geniobits"
-            timestamp="Dec 2021-present"
+            timestamp="Dec 2021-Mar 2022"
             description={[
-              "Built Rest API for mobile and web applications using Django",
+              "Built and Designed Rest API using Django",
               "Researched and implemented UI/UX for a website in React",
+              "Integrated PayTM payment gateway for web applications",
             ]}
           />
           <JobCard
             style={{ width: "22rem", height: "18rem" }}
             position="Full Stack Developer"
             compName="D.Y. Patil Robotics and A.I. Club"
-            timestamp="Aug 2020-present"
+            timestamp="Aug 2020-Feb 2022"
             description={[
               "Lead Team for various web/app projects",
               "Organized HashCode 2021",
