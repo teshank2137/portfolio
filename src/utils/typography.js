@@ -9,3 +9,5 @@ export const typeScale = {
   helperText: "0.75rem",
   copyrightText: "0.563rem",
 };
+
+export const primaryFont = "Inter, Avenir, Helvetica, Arial, sans-serif";
