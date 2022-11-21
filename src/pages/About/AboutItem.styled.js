@@ -8,7 +8,7 @@ export const AboutItemWrapper = styled.div`
 
   color: ${(props) => (props.color ? props.color["00"] : blue["00"])};
   border: 4px solid ${(props) => (props.color ? props.color["00"] : blue["00"])};
-  box-shadow: 0.8rem 0.8rem 0
+  box-shadow: 6px 6px 0
     ${(props) => (props.color ? props.color["00"] : blue["00"])};
   border-radius: 1rem;
   width: 90px;

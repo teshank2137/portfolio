@@ -6,6 +6,6 @@ export const StyledExperienceLayout = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
   height: 100%;
 `;
