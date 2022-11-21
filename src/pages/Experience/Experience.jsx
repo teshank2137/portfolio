@@ -1,13 +1,12 @@
 import gsap from "gsap";
 import Flip from "gsap/Flip";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { Page } from "../../components/Page";
 import { green, pink, yellow } from "../../utils";
 import { ExperienceItem } from "./ExperienceItem";
 import { StyledExperienceLayout } from "./ExperienceLayout.styled";
 
 export const Experience = () => {
-  const ref = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(Flip);
     let cards = document.querySelectorAll(".experience-item");
@@ -34,7 +33,7 @@ export const Experience = () => {
   }, []);
   return (
     <Page header="Experience">
-      <StyledExperienceLayout ref={ref}>
+      <StyledExperienceLayout>
         <ExperienceItem />
         <ExperienceItem color={green} />
         <ExperienceItem color={yellow} />

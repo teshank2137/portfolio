@@ -6,7 +6,7 @@ export const StyledNavbar = styled.nav`
   left: 50%;
   transform: translateX(-50%);
   padding: 1rem;
-
+  z-index: 100;
   ul {
     display: flex;
     list-style: none;
