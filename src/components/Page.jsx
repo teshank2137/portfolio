@@ -18,6 +18,7 @@ const StyledLayout = styled(Grid)`
     right: 0;
     z-index: -10;
     transform: translateX(30%);
+    text-transform: uppercase;
   }
 `;
 
