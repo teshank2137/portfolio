@@ -12,7 +12,7 @@ export const NavbarItem = styled.a`
   align-items: center;
   position: relative;
   user-select: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   .dot {
     width: 8px;
     height: 8px;

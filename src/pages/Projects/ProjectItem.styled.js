@@ -9,6 +9,7 @@ export const Cube = styled.div`
   height: 340px;
   display: flex;
   align-items: flex-end;
+  flex-shrink: 0;
   &:hover {
     transform: rotateY(0) scale(1.5) translateX(20%) translateY(-20%);
   }

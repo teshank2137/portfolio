@@ -8,21 +8,24 @@ export const Projects = () => {
   const ref = useRef(null);
 
   const moveLeft = (e) => {
-    ref.current.style.transform = `translateX(-25%)`;
+    console.log(ref.current.scrollLeft);
+    document.querySelector(".wrapper").scrollLeft += 2000;
   };
   const moveRight = (e) => {
-    ref.current.style.transform = `translateX(0%)`;
+    document.querySelector(".wrapper").scrollLeft -= 2000;
   };
 
   return (
     <Page header="Projects">
       <ProjectContainer ref={ref}>
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
+        <div className="wrapper">
+          <ProjectItem />
+          <ProjectItem />
+          <ProjectItem />
+          <ProjectItem />
+          <ProjectItem />
+          <ProjectItem />
+        </div>
       </ProjectContainer>
       <Carasoul>
         <NextButton flip onClick={moveRight} />
