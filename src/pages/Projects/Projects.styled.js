@@ -21,7 +21,7 @@ export const ProjectContainer = styled.section`
 `;
 
 export const Carasoul = styled.div`
-  grid-column: 6/9;
+  grid-column: 1/13;
   display: flex;
   justify-content: center;
   gap: 1rem;
