@@ -13,7 +13,7 @@ export const Cube = styled.div`
   &:hover {
     transform: rotateY(0) scale(1.5) translateX(20%) translateY(-20%);
   }
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0.55, 0.2, 1.03);
 `;
 
 export const Face = styled.div`
