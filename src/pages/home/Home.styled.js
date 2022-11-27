@@ -10,7 +10,7 @@ export const HomeWrapper = styled.main`
 `;
 
 export const DogContainer = styled.aside`
-  grid-column: 9/13;
+  grid-column: 8/13;
 `;
 
 export const TextContainer = styled.section`

@@ -27,7 +27,12 @@ export const Home = () => {
 
   const produceSpans = (name) => {
     return name.split("").map((letter, index) => (
-      <AnimatedSpan index={index} letter={letter} aria-hidden="true">
+      <AnimatedSpan
+        index={index}
+        letter={letter}
+        aria-hidden="true"
+        key={index}
+      >
         {letter}
       </AnimatedSpan>
     ));

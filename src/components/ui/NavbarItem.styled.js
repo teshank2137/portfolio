@@ -30,6 +30,6 @@ export const NavbarItem = styled.a`
 
   &:active,
   &.active {
-    color: #fffc;
+    color: #fff;
   }
 `;

@@ -16,29 +16,18 @@ const Skills = () => {
     "Dart",
     "Django",
     "Flutter",
-    "React",
+    "ReactJs",
     "Redux",
-    "Nodejs",
+    "NodeJs",
     "Express",
     "HTML",
     "CSS",
     "ThreeJs",
-    "Flask",
-    "GCP",
-    "AWS",
-    "Machine Learning",
-    "Data Science",
-    "npm",
-    "Git",
-    "Github",
-    "MySQL",
-    "Postgres",
-    "MongoDB",
   ];
   const g = useRef();
   useFrame(() => {
-    g.current.rotation.x += 0.004;
-    g.current.rotation.y += 0.004;
+    g.current.rotation.x += 0.0013;
+    g.current.rotation.y += 0.0013;
     // g.current.rotation.z += 0.001;
   });
   return (
