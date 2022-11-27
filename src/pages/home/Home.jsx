@@ -1,14 +1,16 @@
+import { Canvas } from "@react-three/fiber";
 import React, { useContext, useEffect } from "react";
-import { Logo, PageHeader } from "../../components/ui";
 import { useInView } from "react-intersection-observer";
+import { NavbarContext } from "../../context";
+import Dog from "./Dog";
 import {
   AnimatedSpan,
+  DogContainer,
   HomeWrapper,
   Name,
   Position,
   TextContainer,
 } from "./Home.styled";
-import { NavbarContext } from "../../context";
 
 export const Home = () => {
   const { ref, inView } = useInView({
@@ -43,6 +45,11 @@ export const Home = () => {
           </div>
         </Position>
       </TextContainer>
+      <DogContainer>
+        <Canvas camera={{ position: [0, 2, 5] }}>
+          <Dog />
+        </Canvas>
+      </DogContainer>
     </HomeWrapper>
   );
 };

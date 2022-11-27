@@ -7,6 +7,9 @@ import { blue, green, yellow } from "../../utils";
 import { Educations, Paragraph, SkillsWrapper, Text } from "./About.styled";
 import { AboutItem } from "./AboutItem";
 import Skills from "./SkillBall";
+import dyp from "../../assets/images/dyp.png";
+import highschool from "../../assets/images/highschool.jpeg";
+import sos from "../../assets/images/sos.png";
 
 export const About = () => {
   useEffect(() => {
@@ -45,9 +48,31 @@ export const About = () => {
           voluptas, praesentium harum iste obcaecati voluptatum accusantium
         </Paragraph>
         <Educations>
-          <AboutItem color={blue} active />
-          <AboutItem color={green} />
-          <AboutItem color={yellow} />
+          <AboutItem
+            color={blue}
+            active
+            data={{
+              title: "D.Y. Patil college of engineering, Pune",
+              p: "Bachelors of Computer Engineering (2019-2023)",
+              image: dyp,
+            }}
+          />
+          <AboutItem
+            color={green}
+            data={{
+              title: "M.P. Deo D. Science College, Nagpur",
+              p: "High School (2017-2019)",
+              image: highschool,
+            }}
+          />
+          <AboutItem
+            color={yellow}
+            data={{
+              title: "School of Scholars, Nagpur",
+              p: "Secondary Education (2007-2017)",
+              image: sos,
+            }}
+          />
         </Educations>
       </Text>
       <SkillsWrapper>

@@ -9,6 +9,10 @@ export const HomeWrapper = styled.main`
   grid-gap: 1rem;
 `;
 
+export const DogContainer = styled.aside`
+  grid-column: 9/13;
+`;
+
 export const TextContainer = styled.section`
   grid-column: 2/ 8;
   display: flex;
