@@ -34,7 +34,7 @@ export const About = () => {
     });
   }, []);
   return (
-    <Page header="About me">
+    <Page header="About">
       <Text>
         <Paragraph>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo

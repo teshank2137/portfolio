@@ -29,7 +29,7 @@ export const NavbarItem = styled.a`
   }
 
   &:active,
-  .active {
+  &.active {
     color: #fffc;
   }
 `;

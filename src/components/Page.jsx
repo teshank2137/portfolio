@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import styled from "styled-components";
-import { typeScale } from "../utils";
+import { NavbarContext } from "../context";
 import { Grid, PageHeader } from "./ui";
 
 const StyledLayout = styled(Grid)`
@@ -23,10 +24,22 @@ const StyledLayout = styled(Grid)`
 `;
 
 export const Page = ({ children, header }) => {
+  const { ref, inView } = useInView({
+    threshold: 1,
+  });
+
+  const setPage = useContext(NavbarContext);
+
+  useEffect(() => {
+    if (inView) {
+      setPage(header.toLowerCase());
+    }
+  }, [inView]);
+
   return (
-    <StyledLayout>
+    <StyledLayout id={`${header.toLowerCase()}-page`}>
       <>
-        <PageHeader>{header}</PageHeader>
+        <PageHeader ref={ref}>{header}</PageHeader>
         {children}
       </>
       <div className="bg-text">{header}</div>

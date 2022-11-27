@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { PageHeader } from "../../components/ui";
+import { useInView } from "react-intersection-observer";
 import {
   AnimatedSpan,
   HomeWrapper,
@@ -7,8 +8,21 @@ import {
   Position,
   TextContainer,
 } from "./Home.styled";
+import { NavbarContext } from "../../context";
 
 export const Home = () => {
+  const { ref, inView } = useInView({
+    threshold: 1,
+  });
+
+  const setPage = useContext(NavbarContext);
+
+  useEffect(() => {
+    if (inView) {
+      setPage("home");
+    }
+  }, [inView]);
+
   const produceSpans = (name) => {
     return name.split("").map((letter, index) => (
       <AnimatedSpan index={index} letter={letter} aria-hidden="true">
@@ -17,7 +31,7 @@ export const Home = () => {
     ));
   };
   return (
-    <HomeWrapper>
+    <HomeWrapper ref={ref} id="home-page">
       <TextContainer>
         <Name>Teshank Raut</Name>
         <Position>

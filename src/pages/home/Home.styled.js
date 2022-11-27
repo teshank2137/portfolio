@@ -10,7 +10,7 @@ export const HomeWrapper = styled.main`
 `;
 
 export const TextContainer = styled.section`
-  grid-column: 2/ 7;
+  grid-column: 2/ 8;
   display: flex;
   flex-direction: column;
   gap: 4rem;
