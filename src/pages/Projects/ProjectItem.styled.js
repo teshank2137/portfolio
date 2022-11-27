@@ -51,7 +51,8 @@ export const Face = styled.div`
   }
   &.face-1 {
     box-shadow: 0.6rem 0.2rem 0 ${blue["00"]};
-    img {
+
+    .img {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -59,6 +60,9 @@ export const Face = styled.div`
       right: 0;
       z-index: -1;
       transition: all 0.2s ease;
+      background-image: url(${(props) => props.image});
+      background-size: auto 200px;
+      background-position: center;
     }
 
     .content {
@@ -81,8 +85,8 @@ export const Face = styled.div`
         transform: scale(0.8);
         height: 100%;
       }
-      img {
-        filter: brightness(40%) grayscale(100%);
+      .img {
+        filter: brightness(20%) grayscale(100%);
       }
     }
   }

@@ -5,6 +5,7 @@ import { Page } from "../../components/Page";
 import { green, pink, yellow } from "../../utils";
 import { ExperienceItem } from "./ExperienceItem";
 import { StyledExperienceLayout } from "./ExperienceLayout.styled";
+import { experiences } from "../../data";
 
 export const Experience = () => {
   useEffect(() => {
@@ -34,10 +35,9 @@ export const Experience = () => {
   return (
     <Page header="Experience">
       <StyledExperienceLayout>
-        <ExperienceItem />
-        <ExperienceItem color={green} />
-        <ExperienceItem color={yellow} />
-        <ExperienceItem color={pink} />
+        {experiences.map((exp, index) => (
+          <ExperienceItem key={index} data={exp} />
+        ))}
       </StyledExperienceLayout>
     </Page>
   );

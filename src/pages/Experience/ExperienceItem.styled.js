@@ -26,11 +26,11 @@ export const StyledExperienceItem = styled.div`
 
   .header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 1.2rem;
     rotate: 90deg;
-    transform: translateX(50%);
+    transform: translateX(40px);
     transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
     .image {
       display: flex;

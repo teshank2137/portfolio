@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { PageHeader } from "../../components/ui";
+import { Logo, PageHeader } from "../../components/ui";
 import { useInView } from "react-intersection-observer";
 import {
   AnimatedSpan,
