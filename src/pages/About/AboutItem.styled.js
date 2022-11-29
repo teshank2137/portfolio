@@ -47,4 +47,27 @@ export const AboutItemWrapper = styled.div`
       }
     }
   }
+  @media screen and (max-width: 720px) {
+    width: 60px;
+    height: 60px;
+    .logo {
+      min-width: 35px;
+      width: 35px;
+      height: 35px;
+    }
+    &.active {
+      width: 300px;
+      .text {
+        overflow-wrap: break-word;
+        min-width: unset;
+        line-height: 0.8rem;
+        h3 {
+          font-size: ${typeScale.helperText};
+        }
+        p {
+          font-size: ${typeScale.copyrightText};
+        }
+      }
+    }
+  }
 `;

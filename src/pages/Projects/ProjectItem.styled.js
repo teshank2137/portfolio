@@ -90,4 +90,9 @@ export const Face = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 720px) {
+    width: 180px;
+    height: 180px;
+  }
 `;

@@ -32,4 +32,10 @@ export const Button = styled.button`
     background-color: ${(props) => (props.bg ? props.bg["80"] : blue["80"])};
     box-shadow: 4px 4px 0 ${(props) => (props.bg ? props.bg["00"] : blue["00"])};
   }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    box-shadow: 2px 2px 0 ${(props) => (props.bg ? props.bg["00"] : blue["00"])};
+  }
 `;

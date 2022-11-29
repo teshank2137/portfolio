@@ -18,6 +18,9 @@ export const ProjectContainer = styled.section`
       display: none;
     }
   }
+  @media screen and (max-width: 940px) {
+    grid-column: 1 / 7;
+  }
 `;
 
 export const Carasoul = styled.div`
@@ -34,5 +37,8 @@ export const Carasoul = styled.div`
 
   svg {
     width: 60px;
+  }
+  @media screen and (max-width: 940px) {
+    grid-column: 1 / 7;
   }
 `;

@@ -30,3 +30,11 @@ body {
 img{
   width: 100%;
 }
+
+canvas {
+  cursor: grab;
+}
+
+canvas:active{
+  cursor: grabbing;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AiOutlineDownload,
   AiOutlineInstagram,
@@ -12,33 +12,103 @@ import { blue, green, pink, red, yellow } from "../../utils";
 import { ContactForm, ContactWrapper, IconButton } from "./Contact.styled";
 
 export const Contact = () => {
+  const [form, setFormState] = useState({ name: "", email: "", message: "" });
   return (
     <Page header="Contact">
       <ContactWrapper>
-        <ContactForm>
-          <Input placeholder="Name" />
-          <Input placeholder="Email" />
-          <Textarea lines={15} placeholder="Hi! How are you?" />
+        <ContactForm
+          action="https://formspree.io/f/mbjbvlpv"
+          method="POST"
+          name="contact"
+          id="contactform"
+        >
+          <Input
+            placeholder="Name"
+            type="text"
+            name="name"
+            onChange={(e) => {
+              setFormState((prev) => ({ ...prev, name: e.target.value }));
+            }}
+            value={form.name}
+          />
+          <Input
+            placeholder="Email"
+            type="email"
+            name="email"
+            onChange={(e) => {
+              setFormState((prev) => ({ ...prev, email: e.target.value }));
+            }}
+            value={form.email}
+          />
+          <Textarea
+            lines={15}
+            placeholder="Hi! How are you?"
+            name="message"
+            onChange={(e) => {
+              setFormState((prev) => ({ ...prev, message: e.target.value }));
+            }}
+            value={form.message}
+          />
         </ContactForm>
         <div className="buttons">
           <div className="socials">
-            <IconButton bg={pink}>
-              <AiOutlineInstagram size={40} />
-            </IconButton>
-            <IconButton bg={blue}>
-              <AiFillLinkedin size={40} />
-            </IconButton>
-            <IconButton bg={green}>
-              <AiOutlineMail size={40} />
-            </IconButton>
-            <IconButton bg={yellow}>
-              <AiFillGithub size={40} />
-            </IconButton>
-            <IconButton bg={red} tooltip="Download">
-              <AiOutlineDownload size={40} />
-            </IconButton>
+            <a
+              href="http://www.instagram.com/teshank2137"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton bg={pink}>
+                <AiOutlineInstagram size={40} />
+              </IconButton>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/teshankraut/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton bg={blue}>
+                <AiFillLinkedin size={40} />
+              </IconButton>
+            </a>
+
+            <a href="mailto:teshank.2137@gamil.com">
+              <IconButton bg={green}>
+                <AiOutlineMail size={40} />
+              </IconButton>
+            </a>
+
+            <a
+              href="https://github.com/teshank2137"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton bg={yellow}>
+                <AiFillGithub size={40} />
+              </IconButton>
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1GLOhTtQTZtRBZ0i7-s8lWeIQf71Y-P9P/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton bg={red} tooltip="Download">
+                <AiOutlineDownload size={40} />
+              </IconButton>
+            </a>
           </div>
-          <Button>Submit</Button>
+          <Button
+            disabled={
+              form.email.length <= 0 ||
+              form.name.length <= 0 ||
+              form.message.length <= 0
+            }
+            onClick={() => {
+              document.forms["contact"].submit();
+            }}
+          >
+            Submit
+          </Button>
         </div>
       </ContactWrapper>
     </Page>

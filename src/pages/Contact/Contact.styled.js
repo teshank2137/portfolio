@@ -18,6 +18,17 @@ export const ContactWrapper = styled.section`
       gap: 0.5rem;
     }
   }
+  @media screen and (max-width: 720px) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 1/7;
+    padding-inline: 1rem;
+    .buttons {
+      grid-column: span 6;
+    }
+    .socials {
+      flex-wrap: wrap;
+    }
+  }
 `;
 
 export const ContactForm = styled.form`
@@ -34,10 +45,21 @@ export const ContactForm = styled.form`
   textarea {
     grid-column: span 2;
   }
+  @media screen and (max-width: 720px) {
+    grid-column: 1/ 7;
+    input {
+      grid-column: span 2;
+    }
+  }
 `;
 
 export const IconButton = styled(Button)`
   padding: 0;
   width: 60px;
   height: 60px;
+
+  @media screen and (max-width: 720px) {
+    width: 45px;
+    height: 45px;
+  }
 `;

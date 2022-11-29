@@ -7,4 +7,9 @@ export const PageHeader = styled.h2`
   font-weight: bold;
   color: ${blue["110"]};
   padding-block: 1.25rem;
+
+  @media screen and (max-width: 940px) {
+    grid-column: 1 / 7;
+    padding-left: 1rem;
+  }
 `;
