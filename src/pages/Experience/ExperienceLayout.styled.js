@@ -8,7 +8,7 @@ export const StyledExperienceLayout = styled.div`
   align-items: center;
   gap: 1.2rem;
   height: 100%;
-  @media screen and (max-width: 940px) {
+  @media screen and (max-width: 720px) {
     grid-column: 1 / 7;
     padding-inline: 1rem;
   }

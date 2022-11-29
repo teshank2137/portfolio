@@ -9,13 +9,19 @@ export const ContactWrapper = styled.section`
   .buttons {
     display: flex;
     grid-row: 2;
-    grid-column: span 5;
+    grid-column: span 6;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     .socials {
       display: flex;
       gap: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    grid-column: 2/ 10;
+    .buttons {
+      grid-column: 1/ 12;
     }
   }
   @media screen and (max-width: 720px) {
@@ -35,7 +41,7 @@ export const ContactForm = styled.form`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-self: center;
-  grid-column: 1/ 6;
+  grid-column: 1/ 7;
   grid-gap: 1rem;
   grid-template-rows: min-content;
   height: min-content;
@@ -44,6 +50,9 @@ export const ContactForm = styled.form`
   }
   textarea {
     grid-column: span 2;
+  }
+  @media screen and (max-width: 1024px) {
+    grid-column: 1/ 12;
   }
   @media screen and (max-width: 720px) {
     grid-column: 1/ 7;

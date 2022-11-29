@@ -22,9 +22,9 @@ const StyledLayout = styled(Grid)`
     text-transform: uppercase;
   }
 
-  @media screen and (max-width: 940px) {
+  @media screen and (max-width: 720px) {
     grid-template-columns: repeat(6, 1fr);
-    width: 100vw;
+    padding-inline-start: 1rem;
     .bg-text {
       font-size: 5.5rem;
     }

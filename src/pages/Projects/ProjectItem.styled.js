@@ -14,6 +14,10 @@ export const Cube = styled.div`
     transform: rotateY(0) scale(1.5) translateX(20%) translateY(-20%);
   }
   transition: all 0.2s cubic-bezier(0.4, 0.55, 0.2, 1.03);
+  @media screen and (max-width: 720px) {
+    width: 270px;
+    height: 340px;
+  }
 `;
 
 export const Face = styled.div`
@@ -92,7 +96,39 @@ export const Face = styled.div`
   }
 
   @media screen and (max-width: 720px) {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
+    &.face-1 {
+      .img {
+        background-size: auto 160px;
+      }
+      .content {
+        .text-h {
+          font-size: ${typeScale.paragraph};
+        }
+        .text-p {
+          font-size: ${typeScale.helperText};
+          line-height: 1.2rem;
+        }
+        .buttons {
+          justify-content: space-around;
+          button {
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
+    &.face-2 {
+      .text {
+        font-size: ${typeScale.paragraph};
+        line-height: 1.2rem;
+      }
+    }
+    &.face-3 {
+      .text {
+        font-size: ${typeScale.text};
+        line-height: 1.2rem;
+      }
+    }
   }
 `;
