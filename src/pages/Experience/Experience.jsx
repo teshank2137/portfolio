@@ -2,11 +2,10 @@ import gsap from "gsap";
 import Flip from "gsap/Flip";
 import React, { useEffect } from "react";
 import { Page } from "../../components/Page";
-import { green, pink, yellow } from "../../utils";
-import { ExperienceItem } from "./ExperienceItem";
-import { StyledExperienceLayout } from "./ExperienceLayout.styled";
 import { experiences } from "../../data";
 import { useScreenWidth } from "../../hooks";
+import { ExperienceItem } from "./ExperienceItem";
+import { StyledExperienceLayout } from "./ExperienceLayout.styled";
 
 export const Experience = () => {
   const { width } = useScreenWidth();

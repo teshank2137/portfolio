@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import {
+  AiFillGithub,
+  AiFillLinkedin,
   AiOutlineDownload,
   AiOutlineInstagram,
-  AiFillLinkedin,
   AiOutlineMail,
-  AiFillGithub,
 } from "react-icons/ai";
 import { Button, Input, Textarea } from "../../components/form";
 import { Page } from "../../components/Page";

@@ -1,11 +1,11 @@
 import gsap from "gsap";
 import Flip from "gsap/Flip";
 import React, { useEffect, useRef, useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { NavbarContext } from "../context";
 import { CloseButton, MenuButton } from "./form";
 import { StyledNavbar } from "./Navbar.styled";
 import { NavbarItem, Penguin } from "./ui";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export const Navbar = ({ children }) => {
   const activeDot = useRef(null);

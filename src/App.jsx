@@ -1,10 +1,10 @@
 import React from "react";
 import { Navbar } from "./components/Navbar";
-import { Experience } from "./pages/Experience";
 import { About } from "./pages/About";
-import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
+import { Experience } from "./pages/Experience";
 import { Home } from "./pages/home";
+import { Projects } from "./pages/Projects";
 
 function App() {
   return (

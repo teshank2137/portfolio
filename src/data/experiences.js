@@ -1,7 +1,7 @@
-import stealth from "../assets/images/stealth.jpeg";
-import rbl from "../assets/images/RBL.png";
 import genio from "../assets/images/genio.jpeg";
 import draic from "../assets/images/image2.png";
+import rbl from "../assets/images/RBL.png";
+import stealth from "../assets/images/stealth.jpeg";
 
 import { blue, green, pink, yellow } from "../utils";
 

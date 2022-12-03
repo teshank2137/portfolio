@@ -1,6 +1,6 @@
 import React from "react";
-import { Cube, Face } from "./ProjectItem.styled";
 import { Button } from "../../components/form/";
+import { Cube, Face } from "./ProjectItem.styled";
 
 export const ProjectItem = ({ data }) => {
   return (
