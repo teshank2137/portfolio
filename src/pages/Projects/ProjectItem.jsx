@@ -11,8 +11,16 @@ export const ProjectItem = ({ data }) => {
           <h3 className="text-h">{data.title}</h3>
           <p className="text-p">{data.description}</p>
           <div className="buttons">
-            <Button sm>Github</Button>
-            <Button sm>Visit</Button>
+            {data.github && (
+              <a href={data.github} target="_blank" rel="noopener noreferrer">
+                <Button sm>Github</Button>
+              </a>
+            )}
+            {data.link && (
+              <a href={data.link} target="_blank" rel="noopener noreferrer">
+                <Button sm>Visit</Button>
+              </a>
+            )}
           </div>
         </div>
       </Face>

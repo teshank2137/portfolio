@@ -32,4 +32,14 @@ export const NavbarItem = styled.a`
   &.active {
     color: #fff;
   }
+
+  @media screen and (max-width: 720px) {
+    margin-left: 0.5rem;
+    color: #fff7;
+    .dot {
+      left: -15px;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
 `;

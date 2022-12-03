@@ -7,10 +7,16 @@ export const HomeWrapper = styled.main`
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1rem;
+  @media screen and (max-width: 920px) {
+    grid-template-rows: 1fr 1fr;
+  }
 `;
 
 export const DogContainer = styled.aside`
   grid-column: 8/13;
+  @media screen and (max-width: 920px) {
+    grid-column: 1/ 13;
+  }
 `;
 
 export const TextContainer = styled.section`
@@ -19,6 +25,17 @@ export const TextContainer = styled.section`
   flex-direction: column;
   gap: 4rem;
   justify-content: center;
+  @media screen and (max-width: 1204px) {
+    gap: 2.5rem;
+  }
+  @media screen and (max-width: 920px) {
+    grid-column: 1/ 13;
+    align-self: end;
+    padding-inline: 1rem;
+  }
+  @media screen and (max-width: 480px) {
+    gap: 1.5rem;
+  }
 `;
 
 export const Name = styled.h1`
@@ -26,6 +43,13 @@ export const Name = styled.h1`
   font-weight: bolder;
   margin: 0;
   color: white;
+  @media screen and (max-width: 1204px) {
+    font-size: ${typeScale.display};
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: ${typeScale.headline};
+  }
 `;
 
 const textRotate1 = keyframes`
@@ -85,6 +109,12 @@ export const Position = styled(PageHeader)`
         animation: ${textRotate2} 2.4s infinite alternate;
       }
     }
+  }
+  @media screen and (max-width: 1204px) {
+    font-size: ${typeScale.title};
+  }
+  @media screen and (max-width: 480px) {
+    font-size: ${typeScale.subtitle};
   }
 `;
 

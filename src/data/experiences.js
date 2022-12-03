@@ -21,7 +21,7 @@ export const experiences = [
     joined: "June'22",
     end: "July'22",
     title: "Summer Intern",
-    bio: "Loved to work there",
+    bio: "Loved to work there lorem lorem lorem lorem Loved to work there lorem lorem lorem lorem Loved to work there lorem lorem lorem lorem Loved",
     color: green,
   },
   {

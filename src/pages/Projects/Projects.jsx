@@ -10,10 +10,10 @@ export const Projects = () => {
 
   const moveLeft = (e) => {
     console.log(ref.current.scrollLeft);
-    document.querySelector(".wrapper").scrollLeft += 2000;
+    document.querySelector(".wrapper").scrollLeft += 600;
   };
   const moveRight = (e) => {
-    document.querySelector(".wrapper").scrollLeft -= 2000;
+    document.querySelector(".wrapper").scrollLeft -= 650;
   };
 
   return (

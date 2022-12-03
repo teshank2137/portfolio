@@ -5,14 +5,14 @@ import { NavbarContext } from "../context";
 import { Grid, PageHeader } from "./ui";
 
 const StyledLayout = styled(Grid)`
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 120px;
   grid-template-rows: min-content auto;
   position: relative;
   overflow: hidden;
   .bg-text {
     position: absolute;
-    top: 30%;
+    top: 200px;
     font-size: 8rem;
     opacity: 0.2;
     font-weight: 800;

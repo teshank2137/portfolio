@@ -1,13 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
-import { StyledNavbar } from "./Navbar.styled";
-import { NavbarItem, Penguin } from "./ui";
-import { NavbarContext } from "../context";
 import gsap from "gsap";
 import Flip from "gsap/Flip";
+import React, { useEffect, useRef, useState } from "react";
+import { NavbarContext } from "../context";
+import { CloseButton, MenuButton } from "./form";
+import { StyledNavbar } from "./Navbar.styled";
+import { NavbarItem, Penguin } from "./ui";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export const Navbar = ({ children }) => {
   const activeDot = useRef(null);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [currentPage, setCurrentPage] = useState(null);
+  const [navBarVisible, setNavBarVisible] = useState(false);
+
   const handelDotMovement = (e) => {
     setIsScrolling(true);
     if (e.scroll !== false) {
@@ -28,8 +33,6 @@ export const Navbar = ({ children }) => {
     setIsScrolling(false);
   };
 
-  const [currentPage, setCurrentPage] = useState(null);
-
   useEffect(() => {
     if (currentPage && isScrolling === false) {
       handelDotMovement({
@@ -45,7 +48,16 @@ export const Navbar = ({ children }) => {
 
   return (
     <>
-      <StyledNavbar>
+      <MenuButton
+        className={navBarVisible ? "" : "active"}
+        onClick={() => setNavBarVisible(true)}
+      >
+        <AiOutlineMenu size="30" />
+      </MenuButton>
+      <StyledNavbar className={navBarVisible ? "active" : ""}>
+        <CloseButton onClick={() => setNavBarVisible(false)}>
+          <AiOutlineClose size={30} />
+        </CloseButton>
         <ul>
           <li>
             <NavbarItem
@@ -65,7 +77,7 @@ export const Navbar = ({ children }) => {
               Experiences
             </NavbarItem>
           </li>
-          <li>
+          <li className="home_navbar-item">
             <NavbarItem
               className="navbar-item"
               onClick={(e) => {

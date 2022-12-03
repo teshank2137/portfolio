@@ -11,5 +11,9 @@ export const StyledExperienceLayout = styled.div`
   @media screen and (max-width: 720px) {
     grid-column: 1 / 7;
     padding-inline: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    align-items: start;
   }
 `;

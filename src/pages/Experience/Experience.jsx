@@ -6,16 +6,20 @@ import { green, pink, yellow } from "../../utils";
 import { ExperienceItem } from "./ExperienceItem";
 import { StyledExperienceLayout } from "./ExperienceLayout.styled";
 import { experiences } from "../../data";
+import { useScreenWidth } from "../../hooks";
 
 export const Experience = () => {
+  const { width } = useScreenWidth();
+
   useEffect(() => {
     gsap.registerPlugin(Flip);
     let cards = document.querySelectorAll(".experience-item");
     cards.forEach((card, i) => {
+      card.classList.remove("active");
       if (i === 0) {
         card.classList.add("active");
       }
-      card.addEventListener("mouseenter", (e) => {
+      card.addEventListener(width < 720 ? "click" : "mouseenter", (e) => {
         if (card.classList.contains("active")) {
           return;
         }
@@ -31,7 +35,7 @@ export const Experience = () => {
         });
       });
     });
-  }, []);
+  }, [width]);
   return (
     <Page header="Experience">
       <StyledExperienceLayout>

@@ -97,6 +97,72 @@ export const StyledExperienceItem = styled.div`
       }
     }
   }
-`;
 
-export const ExperienceHeader = styled.div``;
+  @media screen and (max-width: 940px) {
+    gap: 0.25rem;
+    .header {
+      gap: 0.75rem;
+      h2 {
+        font-size: ${typeScale.subtitle};
+        line-height: 1.75rem;
+      }
+      .position {
+        font-size: ${typeScale.paragraph};
+        line-height: 1.5rem;
+      }
+      .image {
+        .wrapper {
+          width: 4.8rem;
+          height: 4.8rem;
+        }
+      }
+    }
+    .data {
+      font-size: ${typeScale.helperText};
+    }
+
+    p {
+      font-size: ${typeScale.paragraph};
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    height: auto;
+    width: 100%;
+    grid-column: span 1;
+    grid-row: 2;
+    .text {
+      display: none;
+    }
+
+    .header,
+    .image,
+    .wrapper {
+      height: 100%;
+      width: 100%;
+    }
+    .header {
+      transform: translateX(0);
+      .image {
+        .wrapper {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+
+    &.active {
+      width: 100%;
+      grid-column: 1/4;
+      grid-row: 1;
+      .text {
+        display: block;
+      }
+      .header,
+      .image,
+      .wrapper {
+        width: auto;
+      }
+    }
+  }
+`;

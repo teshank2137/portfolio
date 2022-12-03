@@ -39,3 +39,21 @@ export const Button = styled.button`
     box-shadow: 2px 2px 0 ${(props) => (props.bg ? props.bg["00"] : blue["00"])};
   }
 `;
+
+export const MenuButton = styled.button`
+  all: unset;
+  cursor: pointer;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  transition: 0.2s ease-in-out;
+  transform: translateX(-150%);
+  &.active {
+    transform: translateX(0%);
+  }
+  @media screen and (min-width: 720px) {
+    display: none;
+  }
+`;
