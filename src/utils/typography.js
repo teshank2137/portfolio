@@ -1,21 +1,13 @@
-export const type = {
-    webTitle: "4.35rem",
-    bodyText: "1.625rem",
-    secondaryHeader: "1.3rem",
-    cardTitle: "2rem",
-    cardBody: "1.25rem",
-    timeText: "1.125rem",
-    techStack: "1.625rem",
-    webTitleMobile: "2rem",
-    bodyTextMobile: "1rem",
-    secondaryHeaderMobile: "1rem",
-    cardTitleMobile: "1.313rem",
-    cardBodyMobile: "1rem",
-    timeTextMobile: "0.65rem",
-    techStackMobile: "0.75rem",
+export const typeScale = {
+  bigDisplay: "5.61rem",
+  display: "4.209rem",
+  headline: "3.157rem",
+  title: "2.369rem",
+  subtitle: "1.777rem",
+  text: "1.333rem",
+  paragraph: "1rem",
+  helperText: "0.75rem",
+  copyrightText: "0.563rem",
 };
 
-export const screenSize = {
-    tablet: "1124px",
-    mobile: "786px",
-};
+export const primaryFont = "Inter, Avenir, Helvetica, Arial, sans-serif";

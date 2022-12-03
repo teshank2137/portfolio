@@ -1,0 +1,24 @@
+import { OrbitControls } from "@react-three/drei";
+import { useFrame, useLoader } from "@react-three/fiber";
+import { useRef } from "react";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import dog from "../../assets/3d/dog3.glb";
+
+const Dog = () => {
+  const gltf = useLoader(GLTFLoader, dog);
+  const ref = useRef();
+  useFrame(() => {
+    ref.current.rotation.y += 0.002;
+  });
+  return (
+    <>
+      <spotLight position={[5, 10, 7.5]} />
+      <spotLight position={[-3, 10, -7.5]} />
+      <pointLight color={"#f00"} position={[0, 0.6, 0]} distance="1.5" />
+      <OrbitControls enableZoom={false} enablePan={false} />
+      <primitive object={gltf.scene} scale={1.2} ref={ref} />
+    </>
+  );
+};
+
+export default Dog;
