@@ -1,3 +1,5 @@
+import stonks from "../assets/images/stonks.png";
+
 export const projects = [
   {
     title: "Fan Merch",
@@ -28,7 +30,7 @@ export const projects = [
     title: "Stock Market Prediction API",
     description:
       "An API Which predicts the next day's closing price of a stock.",
-    image: "stockprediction",
+    image: stonks,
     github: "https://github.com/teshank2137/stockprediction",
   },
   {

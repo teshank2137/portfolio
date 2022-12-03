@@ -12,7 +12,7 @@ export const experiences = [
     joined: "Sept'22",
     end: "Present",
     title: "Full Stack Developer",
-    bio: "Loved to work there",
+    bio: "Building the customer and admin portal in ReactJS, Improved security and optimized code. Building backend API using ExpressJS to provide secure and reliable API ",
     color: blue,
   },
   {
@@ -21,7 +21,7 @@ export const experiences = [
     joined: "June'22",
     end: "July'22",
     title: "Summer Intern",
-    bio: "Loved to work there lorem lorem lorem lorem Loved to work there lorem lorem lorem lorem Loved to work there lorem lorem lorem lorem Loved",
+    bio: "Brainstormed various ideas with mentors and teammates for MoBank app. Developed HR portal backend using Django",
     color: green,
   },
   {
@@ -30,7 +30,7 @@ export const experiences = [
     joined: "Sept'22",
     end: "June'23",
     title: "Full Stack Developer",
-    bio: "Loved to work there",
+    bio: "Worked on various projects from basic static sites to dynamic complex websites using ReactJS, Built Rest API's for various use cases",
     color: yellow,
   },
   {
@@ -38,8 +38,8 @@ export const experiences = [
     name: "DRAIC",
     joined: "Sept'22",
     end: "June'23",
-    title: "Full Stack Developer",
-    bio: "Loved to work there",
+    title: "Team Member",
+    bio: "In this D.Y. Patil Robotics and A.I. club we developed collaborative skills. Built amazing projects and brainstormed on various problem statements",
     color: pink,
   },
 ];
