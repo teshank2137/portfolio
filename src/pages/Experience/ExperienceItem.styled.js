@@ -148,6 +148,7 @@ export const StyledExperienceItem = styled.div`
         .wrapper {
           width: 4rem;
           height: 4rem;
+          rotate: 0deg;
         }
       }
     }
