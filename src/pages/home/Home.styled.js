@@ -16,6 +16,7 @@ export const DogContainer = styled.aside`
   grid-column: 8/13;
   @media screen and (max-width: 920px) {
     grid-column: 1/ 13;
+    align-self: start;
   }
 `;
 
@@ -32,6 +33,8 @@ export const TextContainer = styled.section`
     grid-column: 1/ 13;
     align-self: end;
     padding-inline: 1rem;
+    justify-self: center;
+    align-self: center;
   }
   @media screen and (max-width: 480px) {
     gap: 1.5rem;

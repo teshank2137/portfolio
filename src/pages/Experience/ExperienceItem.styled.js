@@ -143,10 +143,12 @@ export const StyledExperienceItem = styled.div`
     }
     .header {
       transform: translateX(0);
+      rotate: 0deg;
       .image {
         .wrapper {
           width: 4rem;
           height: 4rem;
+          rotate: 0deg;
         }
       }
     }
