@@ -4,7 +4,7 @@ export const projects = [
   {
     title: "Fan Merch",
     image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/master/src/assets/images/fanmerch.png",
+      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/fanmerch.png",
     github: "https://github.com/teshank2137/fanMerch",
     link: "https://fan-merch.vercel.app/",
     description:
@@ -15,7 +15,7 @@ export const projects = [
     description:
       "A Twitter bot that scans Twitter for job/intern posting and retweets top tweets daily.",
     image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/master/src/assets/images/Techie.png",
+      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/Techie.png",
     link: "https://twitter.com/FindTechie",
   },
   {
@@ -23,7 +23,7 @@ export const projects = [
     description:
       "A mobile app in which the user can track and mark attendance using face verification.",
     image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/master/src/assets/images/smartattendance.png",
+      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/smartattendance.png",
     github: "https://github.com/teshank2137/smartAtendence",
   },
   {
@@ -37,15 +37,15 @@ export const projects = [
     title: "Algorithm Visualizer",
     description: "Web App to visualize the searching and sorting algorithms",
     image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/master/src/assets/images/sort.JPG",
+      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/sort.JPG",
     link: "https://teshank2137.github.io/#/",
   },
   {
-    title: "My Portfolio",
+    title: "Portfolio v1",
     description: "Built using ReactJS, ThreeJS, CSS3 and lots of ❤️ love.",
     image:
-      "https://raw.githubusercontent.com/teshank2137/portfolio/master/src/assets/images/port.JPG",
-    link: "https://www.teshank.dev/",
+      "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/port.JPG",
+    link: "https://www.v1.teshank.dev/",
     github: "https://github.com/teshank2137/portfolio",
   },
 ];

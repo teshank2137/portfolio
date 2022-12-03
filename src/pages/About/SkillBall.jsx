@@ -2,9 +2,11 @@ import { useFrame, extend } from "@react-three/fiber";
 import SpriteText from "three-spritetext";
 import { OrbitControls } from "@react-three/drei";
 import { useRef } from "react";
+import { useIsMobile } from "../../hooks";
 extend({ SpriteText });
 
 const Skills = () => {
+  const { isMobile } = useIsMobile();
   const getPos = (k) => {
     let a = Math.random();
     let b = Math.random();
@@ -32,7 +34,7 @@ const Skills = () => {
   });
   return (
     <>
-      <OrbitControls enablePan={false} enableZoom={false} />
+      {isMobile ? null : <OrbitControls enablePan={false} enableZoom={false} />}
       <pointLight position={[-2, 2, 2]} args={["#fff", 0.3]} />
       <group ref={g} position={[0, 2, 0]} scale={0.1}>
         {skills.map((a, i) => {
