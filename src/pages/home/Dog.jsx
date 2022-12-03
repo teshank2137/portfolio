@@ -7,7 +7,6 @@ import { useIsMobile } from "../../hooks";
 
 const Dog = () => {
   const { isMobile } = useIsMobile();
-  console.log(isMobile);
   const gltf = useLoader(GLTFLoader, dog);
   const ref = useRef();
   useFrame(() => {
@@ -19,7 +18,7 @@ const Dog = () => {
       <spotLight position={[-3, 10, -7.5]} />
       <pointLight color={"#f00"} position={[0, 0.6, 0]} distance="1.5" />
       {isMobile ? null : <OrbitControls enableZoom={false} enablePan={false} />}
-      <primitive object={gltf.scene} scale={1.2} ref={ref} />
+      <primitive object={gltf.scene} scale={isMobile ? 2 : 1.2} ref={ref} />
     </>
   );
 };

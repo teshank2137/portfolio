@@ -6,7 +6,6 @@ export const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(width < 720);
 
   useEffect(() => {
-    console.log(width);
     if (width < 720) {
       setIsMobile(true);
     } else {
