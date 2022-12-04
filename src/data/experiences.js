@@ -27,8 +27,8 @@ export const experiences = [
   {
     logo: genio,
     name: "GenioBits",
-    joined: "Sept'22",
-    end: "June'23",
+    joined: "Dec'21",
+    end: "Mar'22",
     title: "Full Stack Developer",
     bio: "Worked on various projects from basic static sites to dynamic complex websites using ReactJS, Built Rest API's for various use cases",
     color: yellow,
@@ -36,10 +36,10 @@ export const experiences = [
   {
     logo: draic,
     name: "DRAIC",
-    joined: "Sept'22",
-    end: "June'23",
+    joined: "Sept'19",
+    end: "Jan'22",
     title: "Team Member",
-    bio: "In this D.Y. Patil Robotics and A.I. club we developed collaborative skills. Built amazing projects and brainstormed on various problem statements",
+    bio: "In D.Y. Patil Robotics and A.I. club we developed collaborative skills. Built amazing projects and brainstormed on various problem statements",
     color: pink,
   },
 ];
