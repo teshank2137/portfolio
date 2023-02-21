@@ -38,22 +38,25 @@ export const AboutItemWrapper = styled.div`
     .text {
       min-width: max-content;
       display: block;
-      overflow-wrap: none;
+      overflow-wrap: break-word;
+      min-width: unset;
+      line-height: 1;
       h3 {
         font-size: ${typeScale.paragraph};
       }
       p {
+        margin-top: 4px;
         font-size: ${typeScale.helperText};
       }
     }
   }
   @media screen and (max-width: 720px) {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     .logo {
-      min-width: 35px;
-      width: 35px;
-      height: 35px;
+      min-width: 45px;
+      width: 45px;
+      height: 45px;
     }
     &.active {
       width: 300px;

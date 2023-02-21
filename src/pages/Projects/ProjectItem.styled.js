@@ -1,7 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { blue, typeScale } from "../../utils";
 
+const fadeIn = keyframes`
+  0%{ 
+    translate: 0 200px 0;
+  }
+  100%{
+    translate: 0 0 0;
+  }
+`;
+
 export const Cube = styled.div`
+  translate: 0 200px 0;
   position: relative;
   transform-style: preserve-3d;
   transform: rotateX(35deg) rotateY(45deg);
@@ -17,6 +27,11 @@ export const Cube = styled.div`
   @media screen and (max-width: 720px) {
     width: 270px;
     height: 340px;
+  }
+
+  &.fadeIn {
+    animation: ${fadeIn} 500ms ease forwards;
+    animation-delay: ${(props) => props.index * 0.05}s;
   }
 `;
 

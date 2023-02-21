@@ -21,7 +21,7 @@ export const Projects = () => {
       <ProjectContainer ref={ref}>
         <div className="wrapper">
           {projects.map((data, index) => (
-            <ProjectItem data={data} key={index} />
+            <ProjectItem data={data} key={index} index={index} />
           ))}
         </div>
       </ProjectContainer>
