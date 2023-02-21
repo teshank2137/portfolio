@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { PageHeader } from "../../components/ui";
+import { PageHeader, PageHeaderStyled } from "../../components/ui";
 import { blue, pink, typeScale } from "../../utils";
 
 export const HomeWrapper = styled.main`
@@ -24,7 +24,7 @@ export const TextContainer = styled.section`
   grid-column: 2/ 8;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   justify-content: center;
   @media screen and (max-width: 1204px) {
     gap: 2.5rem;
@@ -45,13 +45,18 @@ export const Name = styled.h1`
   font-size: ${typeScale.bigDisplay};
   font-weight: bolder;
   margin: 0;
-  color: white;
+  background: white;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, #ddd 100%);
+  line-height: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   @media screen and (max-width: 1204px) {
     font-size: ${typeScale.display};
   }
 
   @media screen and (max-width: 480px) {
     font-size: ${typeScale.headline};
+    text-align: center;
   }
 `;
 
@@ -85,7 +90,11 @@ const textRotate2 = keyframes`
 }
 `;
 
-export const Position = styled(PageHeader)`
+export const Position = styled(PageHeaderStyled)`
+  background: unset;
+  line-height: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
   margin-block: 0;
   margin-inline: 0;
   margin: 0;

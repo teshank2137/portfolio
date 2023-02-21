@@ -1,7 +1,5 @@
-import React, { useContext, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import styled from "styled-components";
-import { NavbarContext } from "../context";
 import { Grid, PageHeader } from "./ui";
 
 const StyledLayout = styled(Grid)`
@@ -20,6 +18,7 @@ const StyledLayout = styled(Grid)`
     z-index: -10;
     transform: translateX(30%);
     text-transform: uppercase;
+    font-family: "Roboto";
   }
 
   @media screen and (max-width: 720px) {
@@ -32,22 +31,10 @@ const StyledLayout = styled(Grid)`
 `;
 
 export const Page = ({ children, header }) => {
-  const { ref, inView } = useInView({
-    threshold: 1,
-  });
-
-  const setPage = useContext(NavbarContext);
-
-  useEffect(() => {
-    if (inView) {
-      setPage(header.toLowerCase());
-    }
-  }, [inView]);
-
   return (
     <StyledLayout id={`${header.toLowerCase()}-page`}>
       <>
-        <PageHeader ref={ref}>{header}</PageHeader>
+        <PageHeader>{header.toUpperCase()}</PageHeader>
         {children}
       </>
       <div className="bg-text">{header}</div>

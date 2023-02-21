@@ -14,6 +14,7 @@ export const ProjectContainer = styled.section`
     align-items: center;
     overflow-y: hidden;
     padding-inline-end: 2rem;
+    background: linear-gradient(180deg);
     &::-webkit-scrollbar {
       display: none;
     }

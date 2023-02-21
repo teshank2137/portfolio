@@ -28,8 +28,8 @@ const Skills = () => {
   ];
   const g = useRef();
   useFrame(() => {
-    g.current.rotation.x += 0.0013;
-    g.current.rotation.y += 0.0013;
+    g.current.rotation.x += 0.00053;
+    g.current.rotation.y += 0.00053;
     // g.current.rotation.z += 0.001;
   });
   return (

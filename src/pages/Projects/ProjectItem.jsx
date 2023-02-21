@@ -1,10 +1,12 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import { Button } from "../../components/form/";
 import { Cube, Face } from "./ProjectItem.styled";
 
-export const ProjectItem = ({ data }) => {
+export const ProjectItem = ({ data, index }) => {
+  const { ref, inView } = useInView();
   return (
-    <Cube>
+    <Cube ref={ref} className={inView ? "fadeIn" : null} index={index}>
       <Face className="face-1" image={data.image}>
         <div className="img"></div>
         <div className="content">
