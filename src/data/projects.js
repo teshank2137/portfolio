@@ -1,6 +1,23 @@
 import stonks from "../assets/images/stonks.png";
+import sendfrom from "../assets/images/sendform.jpg";
+import semicolon from "../assets/images/semicolon.png";
+import scroll from "../assets/images/scroll.jpg";
 
 export const projects = [
+  {
+    title: "Semicolon",
+    image: semicolon,
+    link: "https://github.com/teshank2137/semicolon.md",
+    description:
+      "Mental health support by predicting and offering activities for mood upliftment.",
+  },
+  {
+    title: "Send form to me",
+    image: sendfrom,
+    link: "https://sendformto.me",
+    description:
+      "Backend-as-a-service for creating forms with unique URLs and email notifications.",
+  },
   {
     title: "Fan Merch",
     image:
@@ -17,6 +34,13 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/Techie.png",
     link: "https://twitter.com/FindTechie",
+  },
+  {
+    title: "React Infinite scroll",
+    description: "Infinite scrolling using custom hook and ObservableAPI",
+    image: scroll,
+    link: "https://react-infinite-scroll-nu.vercel.app/",
+    github: "https://github.com/teshank2137/react-infinite-scroll",
   },
   {
     title: "Smart Attendance App",
@@ -46,6 +70,5 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/teshank2137/portfolio/v1/src/assets/images/port.JPG",
     link: "https://www.v1.teshank.dev/",
-    github: "https://github.com/teshank2137/portfolio",
   },
 ];
