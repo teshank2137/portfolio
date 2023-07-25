@@ -15,16 +15,18 @@ const Skills = () => {
   const skills = [
     "Python",
     "JavaScript",
+    "TypeScript",
     "Dart",
+    "HTML",
+    "CSS",
     "Django",
     "Flutter",
     "ReactJs",
-    "Redux",
+    "NextJS",
     "NodeJs",
-    "Express",
-    "HTML",
-    "CSS",
+    "ExpressJS",
     "ThreeJs",
+    "Redux",
   ];
   const g = useRef();
   useFrame(() => {
