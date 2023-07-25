@@ -72,3 +72,14 @@ export const IconButton = styled(Button)`
     height: 45px;
   }
 `;
+
+export const DownloadButton = styled(Button)`
+  padding-block: 0;
+  display: flex;
+  gap: 0.5rem;
+  height: 60px;
+
+  @media screen and (max-width: 720px) {
+    height: 45px;
+  }
+`;

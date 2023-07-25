@@ -9,7 +9,12 @@ import {
 import { Button, Input, Textarea } from "../../components/form";
 import { Page } from "../../components/Page";
 import { blue, green, pink, red, yellow } from "../../utils";
-import { ContactForm, ContactWrapper, IconButton } from "./Contact.styled";
+import {
+  ContactForm,
+  ContactWrapper,
+  DownloadButton,
+  IconButton,
+} from "./Contact.styled";
 
 export const Contact = () => {
   const [form, setFormState] = useState({ name: "", email: "", message: "" });
@@ -53,15 +58,6 @@ export const Contact = () => {
         <div className="buttons">
           <div className="socials">
             <a
-              href="http://www.instagram.com/teshank2137"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IconButton bg={pink}>
-                <AiOutlineInstagram size={40} />
-              </IconButton>
-            </a>
-            <a
               href="https://www.linkedin.com/in/teshankraut/"
               target="_blank"
               rel="noopener noreferrer"
@@ -92,9 +88,10 @@ export const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconButton bg={red} tooltip="Download">
+              <DownloadButton bg={red} tooltip="Download">
                 <AiOutlineDownload size={40} />
-              </IconButton>
+                <span>Resume</span>
+              </DownloadButton>
             </a>
           </div>
           <Button

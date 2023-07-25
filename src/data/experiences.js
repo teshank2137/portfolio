@@ -10,9 +10,9 @@ export const experiences = [
     logo: stealth,
     name: "Stealth Startup",
     joined: "Sept'22",
-    end: "Present",
+    end: "Feb'23",
     title: "Full Stack Developer",
-    bio: "Building the customer and admin portal in ReactJS, Improved security and optimized code. Building backend API using ExpressJS to provide secure and reliable API ",
+    bio: "Utilized ExpressJS for backend authentication and rate limitation. The frontend ReactJS code was optimized, eliminating re-renders to enhance performance and user experience. A ReactJS and ExpressJS-based admin panel was developed for data visualization and transaction management.",
     color: blue,
   },
   {
